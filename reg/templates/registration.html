@@ -1,0 +1,10 @@
+<html>
+  <body>
+    <h1>Register for events here</h1>
+    <form action="/register" method="POST">
+      {% csrf_token %}
+      Event name (please enter exact name): <input type="text" name="eventname"> <br><br>
+      <input type="submit" value="Register!">
+    </form>
+  </body>
+</html>

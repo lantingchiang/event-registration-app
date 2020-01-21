@@ -1,0 +1,10 @@
+<html>
+    <Body>
+        <h1>Create an event here!</h1>
+        <form action="/create-event" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Create Event!">
+        </form>
+    </Body>
+</html>
